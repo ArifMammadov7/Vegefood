@@ -1,0 +1,214 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-03 23:22+0400\n"
+"PO-Revision-Date: 2023-11-04 19:24+0000\n"
+"Last-Translator:   <>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"X-Translated-Using: django-rosetta 0.9.9\n"
+
+#: core/templates/base.html:69
+msgid "Home"
+msgstr "Домашняя страница"
+
+#: core/templates/base.html:71
+msgid "Shop"
+msgstr "Магазин"
+
+#: core/templates/base.html:73
+msgid "About"
+msgstr "О нас"
+
+#: core/templates/base.html:74
+msgid "Blog"
+msgstr "Блог"
+
+#: core/templates/base.html:75
+msgid "Contacts"
+msgstr "Контакты"
+
+#: core/templates/base.html:81
+msgid "Login"
+msgstr "Вход"
+
+#: core/templates/base.html:82
+msgid "Sign up"
+msgstr "Регистрация"
+
+#: core/templates/index.html:40
+msgid "Pulsuz çatdırılma"
+msgstr "Бесплатная доставка"
+
+#: core/templates/index.html:41
+msgid "Sifariş $100-dan çox olsa"
+msgstr "Заказам выше 100 $"
+
+#: core/templates/index.html:51
+msgid "Təbiyyətdən təbii olan"
+msgstr "Натуральные продукты с самой природы"
+
+#: core/templates/index.html:52
+msgid "Product well package"
+msgstr "Упакованные продукты"
+
+#: core/templates/index.html:62
+msgid "Yüksək keyfiyyət"
+msgstr "Высшее качество"
+
+#: core/templates/index.html:63
+msgid "Keyfiyyətli məhsullar"
+msgstr "Продукты высшего качества"
+
+#: core/templates/index.html:73
+msgid "Qaynar xətt"
+msgstr "Горячая линия"
+
+#: core/templates/index.html:74
+msgid "24/7 Dəstək"
+msgstr "24/7 Поддержка "
+
+#: core/templates/index.html:87
+msgid "Featured Products"
+msgstr "Популярные продукты"
+
+#: core/templates/index.html:88
+msgid "Our Products"
+msgstr "Наши продукты"
+
+#: core/templates/index.html:89
+msgid ""
+"Far far away, behind the word mountains, far from the countries Vokalia and "
+"Consonantia"
+msgstr ""
+"Далеко далеко в горах,в натуральной и чистой природе выращиваются наши "
+"продукты"
+
+#: core/templates/index.html:144
+#, fuzzy
+#| msgid "Testimonial"
+msgid "Testimony"
+msgstr "Тест"
+
+#: core/templates/index.html:145
+msgid "Our satisfied customer says"
+msgstr "Наши довольные покупатели"
+
+#: core/templates/index.html:146
+#, fuzzy
+#| msgid ""
+#| "Far far away, behind the word mountains, far from the countries Vokalia and "
+#| "Consonantia"
+msgid ""
+"Far far away, behind the word mountains, far from the countries Vokalia and "
+"Consonantia, there live the blind texts. Separated they live in"
+msgstr ""
+"Далеко далеко в горах,в натуральной и чистой природе выращиваются наши "
+"продукты"
+
+#: core/templates/search.html:9
+#, fuzzy
+#| msgid "Search files"
+msgid "Search Results for"
+msgstr "Искать файлы"
+
+#: core/templates/search.html:22
+#, fuzzy
+msgid "No results found."
+msgstr "Поиск не дал результата"
+
+#~ msgid "Wishlist"
+#~ msgstr "Интересы"
+
+#~ msgid "Cart"
+#~ msgstr "Карта"
+
+#~ msgid "Checkout"
+#~ msgstr "Заказ"
+
+#~ msgid "Təbii üsulla yetişən Meyvə və Tərəvəzlər "
+#~ msgstr "Выращенный натуральным методом фрукты и овощи"
+
+#~ msgid " We deliver organic vegetables &amp; fruits "
+#~ msgstr " Мы доставляем только органические овобщи и фрукты "
+
+#~ msgid "View Details "
+#~ msgstr "Показать детали"
+
+#~ msgid "English"
+#~ msgstr "Английский язык"
+
+#~ msgid "Azerbaijani"
+#~ msgstr "Азербайджанский язык"
+
+#~ msgid "Russian"
+#~ msgstr "Русский язык"
+
+#~ msgid "Select an image to embed"
+#~ msgstr " Нажмите на картинку "
+
+#~ msgid "Next Photo &rsaquo;"
+#~ msgstr "Следующая фотография"
+
+#~ msgid "Next &rsaquo;"
+#~ msgstr "Следующая"
+
+#~ msgid "&lsaquo; Prev"
+#~ msgstr "Предыдущая"
+
+#~ msgid "Messages"
+#~ msgstr " Сообщения "
+
+#~ msgid "Site Maps"
+#~ msgstr "Карты"
+
+#~ msgid "Enter a valid value."
+#~ msgstr "Введите верное значение"
+
+#~ msgid "Enter a valid URL."
+#~ msgstr "Не верный ЮРЛ"
+
+#~ msgid "Enter a valid email address."
+#~ msgstr "Введите верный мейл адрес"
+
+#, fuzzy
+#~ msgid "oct"
+#~ msgstr "Контакт"
+
+#~ msgid "Setting"
+#~ msgstr "Настройка"
+
+#~ msgid "Settings"
+#~ msgstr "Настройки"
+
+#~ msgid "Category"
+#~ msgstr "Категория"
+
+#~ msgid "Categories"
+#~ msgstr "Категории"
+
+#~ msgid "Discount"
+#~ msgstr "Скидка"
+
+#~ msgid "Discounts"
+#~ msgstr "Скидки"
+
+#~ msgid "Testimonials"
+#~ msgstr "Тест"
+
+#~ msgid "User"
+#~ msgstr "Пользователь"
+
+#~ msgid "Users"
+#~ msgstr "Пользователи"

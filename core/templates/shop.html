@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}	
+    <!-- END nav -->
+
+    <div class="hero-wrap hero-bread" style="background-image: url('{% static 'images/bg_1.jpg' %}');">
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-9 ftco-animate text-center">
+          	<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Products</span></p>
+            <h1 class="mb-0 bread">Products</h1>
+          </div>
+        </div>x_length=25
+      </div>
+    </div>
+
+    <section class="ftco-section">
+    	<div class="container">
+    		<div class="row justify-content-center">
+    			<div class="col-md-10 mb-5 text-center">
+    				<ul class="product-category">
+						<li><a href="{% url 'shop' %}" class="active">All</a></li>
+						{% for category in category %}
+    				
+    					 <li><a href="{% url 'shop' %}?category={{ category.title }}">{{ category.title }}</a></li>
+    					<!-- <li><a href="#">Fruits</a></li>
+    					<li><a href="#">Juice</a></li>
+    					<li><a href="#">Dried</a></li> -->
+						{% endfor %}
+    				</ul>
+    			</div>
+    		</div>
+			<h1 style="text-align: center;">Our Products</h1> <br>
+    		<div class="row text-center">
+				
+				<form action="{% url 'search' %}" method="get" style="margin-left: 65%;" >
+					<input type="text" name="query" placeholder="search" style="text-align: center; width: 210px;">
+					<input type="submit" value="search">
+				</form>
+				<div class="d-flex flex-wrap" style="padding-top: 50px;">
+				{% for i in mehsul %}
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+					<div class="product">
+						<a href="{% url 'detailproduct' slug=i.slug %}" class="img-prod">
+							<img class="img-fluid" src="{{ i.image.url }}" alt="Colorlib Template">
+							{% if i.discount %}
+								<span class="status">{{ i.discount }}%</span>
+							{% endif %}
+							<div class="overlay"></div>
+						</a>
+						<div class="text py-3 pb-4 px-3 text-center">
+							<h3><a href="#">{{ i.title }}</a></h3>
+							<div class="d-flex">
+								<div class="pricing">
+									{% if i.discount %}
+										<p class="price">
+										
+											<span class="price-sale">${{ i.price }}</span>
+										</p>
+									{% else %}
+										<p class="price">${{ i.price }}</p>
+									{% endif %}
+								</div>
+							</div>
+							<div class="bottom-area d-flex px-3">
+								<div class="m-auto d-flex">
+									<a href="#" class="add-to-cart d-flex justify-content-center align-items-center text-center">
+										<span><i class="ion-ios-menu"></i></span>
+									</a>
+									<!-- <a href="#" class="buy-now d-flex justify-content-center align-items-center mx-1">
+										<span><i class="ion-ios-cart"></i></span>
+									</a>
+									<a href="#" class="heart d-flex justify-content-center align-items-center">
+										<span><i class="ion-ios-heart"></i></span>
+									</a> -->
+								</div>
+							</div>
+						</div>
+					</div>
+    			</div>
+				{% endfor %}
+			</div>
+				
+				{% if products_count == 0 %}
+					<h1 class="text-danger text-center">No any products </h1>
+				{% endif %}
+    
+    		</div>
+    		<div class="row mt-5">
+				<div class="col text-center">
+					<div class="block-27">
+						<ul>
+							{% if mehsul.has_previous %}
+								<li><a href="?page=1">&lt;</a></li>
+							{% endif %}
+							{% for page_num in mehsul.paginator.page_range %}
+								<li{% if page_num == mehsul.number %} class="active"{% endif %}>
+									<a href="?page={{ page_num }}">{{ page_num }}</a>
+								</li>
+							{% endfor %}
+							{% if mehsul.has_next %}
+								<li><a href="?page={{ mehsul.paginator.num_pages }}">&gt;</a></li>
+							{% endif %}
+						</ul>
+					</div>
+				</div>
+				
+        </div>
+    	</div>
+		
+    </section>
+
+	{% endblock %}

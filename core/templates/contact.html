@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}	
+
+
+
+<!-- END nav -->
+
+    <div class="hero-wrap hero-bread" style="background-image: url('{% static 'images/bg_1.jpg' %}');">
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-9 ftco-animate text-center">
+          	<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Contact us</span></p>
+            <h1 class="mb-0 bread">Contact us</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="ftco-section contact-section bg-light">
+      <div class="container">
+      	<div class="row d-flex mb-5 contact-info">
+          <div class="w-100"></div>
+          <div class="col-md-3 d-flex">
+          	<div class="info bg-white p-4">
+	            <p><span>Address:</span> {{ setting.location}}</p>
+	          </div>
+          </div>
+          <div class="col-md-3 d-flex">
+          	<div class="info bg-white p-4">
+	            <p><span>Phone:</span> <a href="tel://1234567920">+{{ setting.phone1}}</a></p>
+	          </div>
+          </div>
+          <div class="col-md-3 d-flex">
+          	<div class="info bg-white p-4">
+	            <p><span>Email:</span> <a href="mailto:info@yoursite.com">{{ setting.email}}</a></p>
+	          </div>
+          </div>
+       
+        </div>
+        <div class="row block-9">
+          <div class="col-md-6 order-md-last d-flex">
+              <form action='' method="post">
+                {% csrf_token %}
+                {{form.as_p}}
+                 <!-- {% comment %} {% for field in form %}
+                {{ field }}
+                {% endfor %}  {% endcomment %} -->
+                <div class="send_btn">
+                  <button type="submit" class="btn btn-primary py-3 px-5"> submit
+                </div>
+              </form>
+
+      
+        
+            </form>
+          
+          </div>
+
+          <div class="col-md-6">
+            <div class="map_main">
+               <div class="map-responsive">
+                  <iframe
+                  src="https://maps.google.com/maps?q=cinar%20park&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                     width="600" height="600" frameborder="0" style="border:0; width: 100%;"
+                     allowfullscreen=""></iframe>
+               </div>
+            </div>
+         </div>
+        </div>
+      </div>
+    </section>
+    {% endblock %}

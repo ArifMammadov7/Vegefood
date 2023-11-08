@@ -1,2 +1,1 @@
-# Vegefood
-Vegefood project
+# vegefood

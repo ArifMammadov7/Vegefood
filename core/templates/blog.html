@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}	
+
+    <div class="hero-wrap hero-bread" style="background-image: url('images/bg_1.jpg');">
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-9 ftco-animate text-center">
+          	<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Blog</span></p>
+            <h1 class="mb-0 bread">Blog</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="ftco-section ftco-degree-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 ftco-animate">
+						<div class="row">
+							{% for i in blog %}
+							<div class="col-md-12 d-flex ftco-animate">
+		            <div class="blog-entry align-self-stretch d-md-flex">
+		              <a href="{% url 'detailblog' slug=i.slug %}" class="block-20" style="background-image: url('{{ i.image.url }}');">
+		              </a>
+		              <div class="text d-block pl-md-4">
+		              	<div class="meta mb-3">
+		                  <div><a href="#">{{ i.created_at|date:"F j, Y" }}</a></div>
+		                  <div><a href="#">{{ i.author }}</a></div>
+		                  <!-- <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div> -->
+		                </div>
+		                <h3 class="heading"><a href="#">{{ i.title  }}</a></h3>
+		                <!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
+		                <p><a href="{% url 'detailblog' slug=i.slug %}" class="btn btn-primary py-2 px-3">Read more</a></p>
+		              </div>
+		            </div>
+		          </div>
+				  {% endfor  %}
+		    
+		    
+						</div>
+          </div> <!-- .col-md-8 -->
+          <div class="col-lg-4 sidebar ftco-animate">
+         
+
+            <div class="sidebar-box ftco-animate">
+              <h3 class="heading">Tag Cloud</h3>
+              <div class="tagcloud">
+				<a href="{% url 'blog' %}" class="tag-cloud-link">umumi taglerim</a>
+				{% for tag in tag %}
+                <a href="{% url 'blog' %}?tag={{ tag.title }}" class="tag-cloud-link">{{ tag.title }}</a>
+				{% endfor %}
+               
+              </div>
+            </div>
+
+            <div class="sidebar-box ftco-animate">
+              <h3 class="heading">{{ setting.title}}</h3>
+              <p>{{ setting.description}}</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section> <!-- .section -->
+{% endblock %}

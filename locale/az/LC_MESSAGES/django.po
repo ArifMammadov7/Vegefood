@@ -1,0 +1,189 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-03 23:22+0400\n"
+"PO-Revision-Date: 2023-11-02 16:12+0000\n"
+"Last-Translator:   <>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.9\n"
+
+#: core/templates/base.html:69
+msgid "Home"
+msgstr "Ana səhifə"
+
+#: core/templates/base.html:71
+msgid "Shop"
+msgstr "Mağaza"
+
+#: core/templates/base.html:73
+msgid "About"
+msgstr "Haqqimizda"
+
+#: core/templates/base.html:74
+msgid "Blog"
+msgstr "Bloq"
+
+#: core/templates/base.html:75
+msgid "Contacts"
+msgstr "Kontaktlar"
+
+#: core/templates/base.html:81
+msgid "Login"
+msgstr "Daxil ol"
+
+#: core/templates/base.html:82
+msgid "Sign up"
+msgstr "Qeydiyyatdan keç"
+
+#: core/templates/index.html:40
+msgid "Pulsuz çatdırılma"
+msgstr "Pulsuz çatdırılma"
+
+#: core/templates/index.html:41
+msgid "Sifariş $100-dan çox olsa"
+msgstr "Sifariş $100-dan çox olsa"
+
+#: core/templates/index.html:51
+msgid "Təbiyyətdən təbii olan"
+msgstr "Təbiyyətdən təbii olan"
+
+#: core/templates/index.html:52
+msgid "Product well package"
+msgstr "Məhsulların paketlənməsi"
+
+#: core/templates/index.html:62
+msgid "Yüksək keyfiyyət"
+msgstr "Yüksək keyfiyyət"
+
+#: core/templates/index.html:63
+msgid "Keyfiyyətli məhsullar"
+msgstr "Keyfiyyətli məhsullar"
+
+#: core/templates/index.html:73
+msgid "Qaynar xətt"
+msgstr "Qaynar xətt"
+
+#: core/templates/index.html:74
+msgid "24/7 Dəstək"
+msgstr "24/7 Dəstək"
+
+#: core/templates/index.html:87
+msgid "Featured Products"
+msgstr "Ən çox satılan məhsullar"
+
+#: core/templates/index.html:88
+msgid "Our Products"
+msgstr "Bizim məhsullarımız"
+
+#: core/templates/index.html:89
+msgid ""
+"Far far away, behind the word mountains, far from the countries Vokalia and "
+"Consonantia"
+msgstr "Yüksək dağlardan,təmiz ətraf və təbiyyətdə yetişən məhsullar"
+
+#: core/templates/index.html:144
+#, fuzzy
+#| msgid "Testimonial"
+msgid "Testimony"
+msgstr "Test"
+
+#: core/templates/index.html:145
+msgid "Our satisfied customer says"
+msgstr "Razı qalan müşdərilərimiz"
+
+#: core/templates/index.html:146
+#, fuzzy
+#| msgid ""
+#| "Far far away, behind the word mountains, far from the countries Vokalia "
+#| "and Consonantia"
+msgid ""
+"Far far away, behind the word mountains, far from the countries Vokalia and "
+"Consonantia, there live the blind texts. Separated they live in"
+msgstr "Yüksək dağlardan,təmiz ətraf və təbiyyətdə yetişən məhsullar"
+
+#: core/templates/search.html:9
+#, fuzzy
+#| msgid "Search files"
+msgid "Search Results for"
+msgstr "File axtar"
+
+#: core/templates/search.html:22
+msgid "No results found."
+msgstr "Axtardığınız tapılmadı"
+
+#~ msgid "Wishlist"
+#~ msgstr "İstəklər"
+
+#~ msgid "Cart"
+#~ msgstr "Kart"
+
+#~ msgid "Checkout"
+#~ msgstr "Yoxlanış"
+
+#~ msgid " We deliver organic vegetables &amp; fruits "
+#~ msgstr "Orqanik meyvə və Tərəvəzlərin çatdırılması"
+
+#~ msgid "View Details "
+#~ msgstr "Detallara bax"
+
+#~ msgid "English"
+#~ msgstr "İngilis dili"
+
+#~ msgid "Azerbaijani"
+#~ msgstr "Azərbaycan dili"
+
+#~ msgid "Russian"
+#~ msgstr "Rus dili"
+
+#~ msgid "Site Maps"
+#~ msgstr "Xəritə"
+
+#~ msgid "This field cannot be null."
+#~ msgstr "Bu hissə boş qalmamalıdır!"
+
+#, fuzzy
+#~| msgid "Contact"
+#~ msgid "oct"
+#~ msgstr "Kontakt"
+
+#~ msgid "CONTENT COLUMN "
+#~ msgstr "Kontent"
+
+#~ msgid "Setting"
+#~ msgstr "Ayarlar"
+
+#~ msgid "Settings"
+#~ msgstr "Ayarlar"
+
+#~ msgid "Category"
+#~ msgstr "Kategorya"
+
+#~ msgid "Categories"
+#~ msgstr "Kategorilər"
+
+#~ msgid "Discount"
+#~ msgstr "Endirim"
+
+#~ msgid "Discounts"
+#~ msgstr "Endirimlər"
+
+#~ msgid "Testimonials"
+#~ msgstr "Test"
+
+#~ msgid "User"
+#~ msgstr "İstifadəçi"
+
+#~ msgid "Users"
+#~ msgstr "İstifadəçilər"
